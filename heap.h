@@ -13,6 +13,7 @@ class Heap{
  public:
     Heap() {}  // default constructor
     Heap(std::vector<int>::iterator start, std::vector<int>::iterator end); // build a heap from a range using heapify
+    void bubbleDown(int index);
     void push(int value);     // insert value; //duplicates are allowed
     void pop(); // delete the min element
     int top();
